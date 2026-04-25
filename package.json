@@ -1,0 +1,10 @@
+{
+  "name": "ProgettoDiFineAnno",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Assets/JS/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true
+}
