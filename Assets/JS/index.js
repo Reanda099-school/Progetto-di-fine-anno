@@ -7,26 +7,19 @@ const numDomandeTotali = 15;
 const containerQuiz = document.querySelector('.container');
 const startButton = document.getElementById('start');
 
-async function loadQuizData() {
-    try {
-        // PERCORSO CORRETTO:
-        // Usciamo da 'Subpages' con '..', entriamo in 'Assets', poi 'Data'
+async function loadQuizData()
+{
         const percorsoJSON = "../Assets/Data/Domande_quiz.json";
 
         const response = await fetch(percorsoJSON);
 
-        if (!response.ok) {
+        if (!response.ok)
+        {
             throw new Error(`Non trovo il file JSON. Status: ${response.status}`);
         }
 
         const data = await response.json();
-        // Mescoliamo le domande
         return data.domande.sort(() => Math.random() - 0.5).slice(0, numDomandeTotali);
-    } catch (error) {
-        alert("Errore critico: " + error.message + "\n\nAssicurati di usare 'Live Server' su VS Code!");
-        console.error(error);
-        return null;
-    }
 }
 
 // Avvio al click del bottone "Inizia"

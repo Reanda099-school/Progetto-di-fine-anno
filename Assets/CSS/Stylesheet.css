@@ -68,6 +68,7 @@ body
     color: black;
     float: right;
     margin-right: 15px;
+    text-shadow: #dcdcdc 2px 1px 2px;
 }
 
 .btQuiz img
@@ -99,6 +100,7 @@ body
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-shadow: inset 0 0 10px #000000;
     border-radius: 30px;
+    text-shadow: #dcdcdc 2px 2px 4px;
 }
 
 .box2
@@ -117,6 +119,7 @@ body
     display: flex;
     justify-content: center;
     box-shadow: 5px 5px 10px #1a1a1a;
+    text-shadow: #000000 2px 2px 4px;
 }
 
 
@@ -134,7 +137,7 @@ body
     height: auto;
     box-shadow: 5px 5px 10px #1a1a1a;
     color: black;
-
+    text-shadow: #cccccc 1px 1px 2px;
 }
 .btScopri:hover
 {
@@ -161,6 +164,7 @@ body
     margin: 30px;
     text-align: center;
     box-shadow: 5px 5px 10px #1a1a1a;
+    text-shadow: #f5f5f5 1px 1px 3px;
 }
 
 .back{
@@ -178,6 +182,7 @@ body
     box-shadow: inset 0 0 10px #000000;
     border-radius: 20px;
     cursor: pointer;
+    text-shadow: #dcdcdc 2px 1px 2px;
 }
 
 .back:hover
@@ -195,6 +200,7 @@ footer
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 20px;
+    text-shadow: #dcdcdc 2px 1px 2px;
 }
 
 /* Quiz */
@@ -209,6 +215,8 @@ footer
 {
     background-color: #dc3545 !important;
     color: white;
+    text-shadow: #dcdcdc 2px 1px 2px;
+
 }
 
 /* Box spiegazione */
@@ -219,29 +227,56 @@ footer
     padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
-    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: #333;
+    text-shadow: #dcdcdc 2px 1px 2px;
 }
 
 #testo-spiegazione
 {
     margin-bottom: 10px;
-    display: block;
 }
 
 .option-container
 {
-    display: block;
     padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
     cursor: pointer;
     background: #eee;
     transition: 0.3s;
+    box-shadow: inset 0 0 5px #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-shadow: #2d2d2d 2px 1px 2px;
+
 }
 
 .option-container:hover
 {
-    background: #ddd;
+    transform: scale(1.05);
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.3);
 }
 
+.quizQuestion
+{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+    width: 45%;
+    height: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    border-style: solid;
+    background-color: #58c7ff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.3);
+    text-shadow: #dcdcdc 2px 1px 2px;
+}
+
+.quizQuestion p
+{
+    font-size: 20px;
+}
