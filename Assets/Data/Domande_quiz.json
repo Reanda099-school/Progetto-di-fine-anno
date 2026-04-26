@@ -1,0 +1,154 @@
+{
+    "domande": [
+        {
+            "Domanda": "Secondo la definizione fornita da Wikipedia e dai documenti ministeriali, cos'è la 'cittadinanza digitale'?",
+            "A": "L'obbligo di possedere un'identità digitale per poter interagire esclusivamente con soggetti privati.",
+            "B": "L'unione tra l'educazione civica e l'educazione digitale, che bilancia diritti, doveri e consapevolezza dell'impatto delle proprie azioni online.",
+            "C": "Il diritto esclusivo di accedere gratuitamente a Internet garantito dallo Stato a tutti i residenti.",
+            "D": "La capacità tecnica di utilizzare strumenti informatici e software di base per scopi lavorativi.",
+            "Corretta": "B",
+            "Spiegazione": "La cittadinanza digitale è la capacità di un individuo di avvalersi consapevolmente e responsabilmente dei diritti e dei doveri connessi all'uso delle tecnologie.",
+            "Fonte": "https://it.wikipedia.org/wiki/Cittadinanza_digitale"
+        },
+        {
+            "Domanda": "Quale delle seguenti opzioni descrive correttamente un'impronta digitale 'passiva'?",
+            "A": "I dati raccolti dai siti web sulla frequenza delle visite e l'indirizzo IP, senza che l'utente ne sia consapevole.",
+            "B": "La compilazione di un modulo online per l'iscrizione a una newsletter.",
+            "C": "La pubblicazione intenzionale di un commento su un blog o su un social network.",
+            "D": "L'invio di un'email di lavoro a un collega o a un cliente.",
+            "Corretta": "A",
+            "Spiegazione": "L'impronta passiva viene lasciata involontariamente dall'utente attraverso cookie, indirizzi IP e dati di navigazione raccolti dai server.",
+            "Fonte": "https://www.malwarebytes.com/it/cybersecurity/basics/digital-footprint"
+        },
+        {
+            "Domanda": "Qual è la principale innovazione introdotta dal framework DigComp 2.2 rispetto alle versioni precedenti?",
+            "A": "La riduzione delle aree di competenza da 5 a 3 anni per semplificare la valutazione scolastica.",
+            "B": "L'inclusione di oltre 250 esempi che riflettono le sfide poste dall'Intelligenza Artificiale e dalla 'dataficazione' della vita quotidiana.",
+            "C": "L'eliminazione dell'area relativa alla sicurezza per concentrarsi esclusivamente sulla creazione di contenuti.",
+            "D": "L'imposizione di un software specifico che tutti i cittadini europei devono imparare a usare.",
+            "Corretta": "B",
+            "Spiegazione": "L'aggiornamento 2.2 pone l'accento su come l'IA e gli algoritmi influenzano le informazioni che consumiamo e la nostra privacy.",
+            "Fonte": "https://repubblicadigitale.gov.it/portale/-/digcomp-2.2-il-quadro-delle-competenze-digitali-per-i-cittadini"
+        },
+        {
+            "Domanda": "Secondo la Legge 92/2019, come viene integrata la cittadinanza digitale nel sistema scolastico italiano?",
+            "A": "Come uno dei 3 nuclei concettuali dell'insegnamento trasversale dell'Educazione Civica.",
+            "B": "Attraverso l'obbligo per ogni studente di creare un profilo pubblico sui social media dell'istituto",
+            "C": "Come una materia facoltativa che gli studenti possono scegliere di frequentare nel pomeriggio.",
+            "D": "Come un corso tecnico affidato esclusivamente agli insegnanti di informatica.",
+            "Corretta": "A",
+            "Spiegazione": "La Legge 92/2019 inserisce la cittadinanza digitale insieme alla Costituzione e allo Sviluppo Sostenibile come pilastri dell'Educazione Civica.",
+            "Fonte": "https://www.mim.gov.it/documents/20182/0/Linee+guida+Educazione+civica.pdf/9ffd1e06-db57-1596-c742-216b3f42b995"
+        },
+        {
+            "Domanda": "Cosa prevede la Legge 71/2017 riguardo al diritto di 'oscuramento' per i minori vittime di cyberbullismo?",
+            "A": "Solo la Polizia Postale può richiedere la rimozione di contenuti, previo ordine del tribunale.",
+            "B": "Le compagnie telefoniche sono le uniche responsabili dell'eliminazione fisica dei post offensivi.",
+            "C": "Il minore ultraquattordicenne o i genitori possono richiedere al gestore del sito la rimozione o il blocco dei dati personali ritenuti dannosi.",
+            "D": "L'oscuramento può essere richiesto solo se il bullo è maggiorenne e già condannato.",
+            "Corretta": "C",
+            "Spiegazione": "La legge permette una procedura rapida: se il gestore non provvede entro 48 ore, la vittima può rivolgersi al Garante per la Privacy.",
+            "Fonte": "https://www.garanteinfanzia.org/wp-content/uploads/2025/06/scheda_legge_71.pdf"
+        },
+        {
+            "Domanda": "Cos'è l'effetto di 'disinibizione online' menzionato negli studi psicologici sulla cittadinanza digitale?",
+            "A": "L'aumento delle capacità di apprendimento rapido grazie all'uso di interfacce digitali intuitive.",
+            "B": "La naturale tendenza dei giovani a condividere ogni dettaglio della propria vita privata senza filtri.",
+            "C": "Il miglioramento dell'empatia verso gli altri utenti grazie alla velocità della comunicazione testuale.",
+            "D": "La riduzione delle barriere inibitorie che porta gli utenti a comportarsi online in modi che eviterebbero di persona, a causa dell'anonimato percepito.",
+            "Corretta": "D",
+            "Spiegazione": "La mancanza di contatto visivo e l'asincronia della comunicazione portano spesso a una riduzione del controllo sociale sui propri comportamenti.",
+            "Fonte": "https://mymentis.it/adolescenti/cyberbullismo-conseguenze-sulle-vittime-e-dinamiche-digitali/"
+        },
+        {
+            "Domanda": "Qual è il primo principio del 'Manifesto della comunicazione non ostile'?",
+            "A": "Il silenzio non è comunicazione.",
+            "B": "Le idee non si discutono mai.",
+            "C": "Anonimato è libertà.",
+            "D": "Virtuale è reale.",
+            "Corretta": "D",
+            "Spiegazione": "Dico o scrivo in rete solo ciò che avrei il coraggio di dire di persona. Le parole online hanno conseguenze concrete nella vita reale.",
+            "Fonte": "https://paroleostili.it/manifesto/"
+        },
+        {
+            "Domanda": "In una scuola, chi è il 'Referente' previsto dalle linee guida contro il bullismo e il cyberbullismo?",
+            "A": "Un agente di polizia che presidia l'ingresso della scuola ogni mattina.",
+            "B": "Un tecnico informatico che installa software di monitoraggio su tutti i computer della scuola.",
+            "C": "Un rappresentante degli studenti incaricato di monitorare i profili privati dei compagni.",
+            "D": "Un docente dell'istituto con il compito di coordinare le iniziative di prevenzione e gestire le segnalazioni di abusi.",
+            "Corretta": "D",
+            "Spiegazione": "Ogni scuola deve designare un docente referente che faccia da punto di raccordo tra famiglia, studenti e forze dell'ordine.",
+            "Fonte": "https://www.piattaformaelisa.it/linee-di-orientamento-per-la-prevenzione-e-il-contrasto-del-bullismo-e-cyberbullismo/"
+        },
+        {
+            "Domanda": "Cosa si intende per 'ammonimento del Questore' nel contesto della Legge 71/2017?",
+            "A": "L'espulsione definitiva del minore dal sistema scolastico nazionale.",
+            "B": "L'arresto immediato del minore colto in flagrante mentre pubblica un post offensivo.",
+            "C": "Un provvedimento amministrativo che convoca il minore autore di cyberbullismo e i genitori per renderli consapevoli della gravità dei fatti.",
+            "D": "Una multa pecuniaria che la famiglia del bullo deve pagare direttamente alla vittima.",
+            "Corretta": "C",
+            "Spiegazione": "È una misura preventiva 'di ammonimento' che mira a fermare il comportamento prima che diventi un reato penale più grave.",
+            "Fonte": "https://www.garanteprivacy.it/cyberbullismo"
+        },
+        {
+            "Domanda": "Qual è la differenza fondamentale tra l'intelligenza umana e l'IA secondo il filosofo Luciano Floridi?",
+            "A": "L'IA ha sviluppato sentimenti ma non ha ancora i diritti civili per esprimerli.",
+            "B": "L'IA possiede 'agency' (capacità di agire per risolvere compiti) ma non l'intelligenza (capacità di comprendere o pensare).",
+            "C": "L'IA pensa esattamente come un bambino di 5 anni in termini di creatività.",
+            "D": "L'IA è superiore perché non commette mai errori logici nelle interazioni sociali.",
+            "Corretta": "B",
+            "Spiegazione": "Floridi definisce l'IA come il 'divorzio' tra l'agire (compiere un'azione) e l'intendere (capire il significato di ciò che si fa).",
+            "Fonte": "https://www.agendadigitale.eu/cittadinanza-digitale/"
+        },
+        {
+            "Domanda": "In termini di cittadinanza digitale, perché l'impronta digitale è considerata 'permanente'?",
+            "A": "Perché i motori di ricerca sono obbligati a conservare una copia di ogni sito web per scopi storici.",
+            "B": "Perché esiste una legge che impedisce la cancellazione di qualsiasi contenuto caricato dopo i 14 anni.",
+            "C": "Perché anche dopo l'eliminazione da parte dell'utente, i dati possono essere salvati su server di terzi o tramite screenshot.",
+            "D": "Perché l'indirizzo IP di un computer non può mai essere cambiato una volta registrato.",
+            "Corretta": "C",
+            "Spiegazione": "Una volta online, il controllo sui dati viene perso: altri possono copiare, condividere o archiviare le informazioni in luoghi non accessibili all'autore originale.",
+            "Fonte": "https://www.ibm.com/it-it/think/topics/digital-footprint"
+        },
+        {
+            "Domanda": "Quale tra questi è uno dei 'Cinque Pilastri' della strategia nazionale per la cittadinanza digitale in Italia?",
+            "A": "L'obbligo di utilizzare solo social media approvati dal Governo.",
+            "B": "L'Identità Digitale (SPID/CIE) per l'accesso ai servizi della Pubblica Amministrazione.",
+            "C": "La creazione di un archivio pubblico contenente la cronologia di navigazione di ogni cittadino.",
+            "D": "La distribuzione gratuita di smartphone a ogni studente all'inizio dell'anno scolastico.",
+            "Corretta": "B",
+            "Spiegazione": "L'identità digitale è lo strumento cardine per esercitare i propri diritti di cittadino verso lo Stato in modalità digitale.",
+            "Fonte": "https://repubblicadigitale.gov.it/portale/-/digcomp-2.2-il-quadro-delle-competenze-digitali-per-i-cittadini"
+        },
+        {
+            "Domanda": "Cosa suggerisce il concetto di 'lettura laterale' (lateral reading) per combattere la disinformazione?",
+            "A": "Controllare solo la data di pubblicazione per assicurarsi che la notizia sia recente.",
+            "B": "Leggere solo le conclusioni di un articolo per risparmiare tempo.",
+            "C": "Uscire dal sito che si sta leggendo per verificare su altre schede o fonti l'attendibilità dell'autore e della notizia.",
+            "D": "Confrontare 2 articoli pubblicati dallo stesso autore per trovarne le somiglianze.",
+            "Corretta": "C",
+            "Spiegazione": "Invece di analizzare solo l'aspetto grafico del sito, i fact-checker verificano cosa dicono altre fonti attendibili su quel sito o autore.",
+            "Fonte": "https://educazionecivica.zanichelli.it/linee-guida-per-l-educazione-civica/"
+        },
+        {
+            "Domanda": "Secondo il Consiglio d'Europa, quali sono i quattro domini delle competenze per una cultura della democrazia?",
+            "A": "Privacy, Sicurezza, Connessione, Intrattenimento.",
+            "B": "Tecnica, Economia, Diritto, Informatica.",
+            "C": "Lettura, Scrittura, Calcolo, Programmazione.",
+            "D": "Valori, Atteggiamenti, Abilità, Conoscenza e comprensione critica.",
+            "Corretta": "D",
+            "Spiegazione": "Questi domini definiscono cosa un cittadino dovrebbe sapere e come dovrebbe agire per sostenere una società democratica, anche digitale.",
+            "Fonte": "https://europedirectromatre.eu/i-nove-elementi-della-cittadinanza-digitale/"
+        },
+        {
+            "Domanda": "Quale percentuale di datori di lavoro, secondo i dati riportati, effettua ricerche online sui candidati?",
+            "A": "Quasi il 100%, per obbligo di legge.",
+            "B": "Circa il 77%.",
+            "C": "Meno del 10%, per rispetto della privacy.",
+            "D": "Circa il 43%.",
+            "Corretta": "B",
+            "Spiegazione": "Le aziende monitorano i social per valutare la professionalità e la reputazione digitale (web reputation) dei futuri dipendenti.",
+            "Fonte": "https://www.trendmicro.com/it_it/what-is/what-is-zero-trust/digital-footprint.html"
+        }
+    ]
+}
