@@ -9,25 +9,38 @@ const startButton = document.getElementById('start');
 
 async function loadQuizData()
 {
+    try
+    {
+        // PERCORSO CORRETTO:
+        // Usciamo da 'Subpages' con '..', entriamo in 'Assets', poi 'Data'
         const percorsoJSON = "../Assets/Data/Domande_quiz.json";
 
         const response = await fetch(percorsoJSON);
 
-        if (!response.ok)
-        {
-            throw new Error(`Non trovo il file JSON. Status: ${response.status}`);
+        if (!response.ok) {
+            throw new Error("Non trovo il file JSON. Status: " +  response.status);
         }
 
         const data = await response.json();
+        // Mescoliamo le domande
         return data.domande.sort(() => Math.random() - 0.5).slice(0, numDomandeTotali);
+    }
+    catch (error)
+    {
+        alert("Errore critico: " + error.message + "\n\nAssicurati di usare 'Live Server' su VS Code!");
+        console.error(error);
+        return null;
+    }
 }
 
 // Avvio al click del bottone "Inizia"
-if (startButton) {
+if (startButton)
+{
     startButton.addEventListener('click', async (e) => {
         e.preventDefault();
         const caricati = await loadQuizData();
-        if (caricati) {
+        if (caricati)
+        {
             datiQuiz = caricati;
             // Nascondiamo gli elementi della intro se presenti
             const intro = document.querySelector('.containerIndex');
@@ -38,13 +51,15 @@ if (startButton) {
     });
 }
 
-function mostraDomanda() {
+function mostraDomanda()
+{
     const q = datiQuiz[indiceDomandaCorrente];
     containerQuiz.innerHTML = `
         <div id="quiz-form">
-            <h3 style="color: #930101;">Domanda ${indiceDomandaCorrente + 1} di ${numDomandeTotali}</h3>
-            <p style="font-weight:bold; font-size: 1.1rem; margin-bottom: 20px;">${q.Domanda}</p>
-            
+            <div class="quizQuestion">
+                <h3 style="color: #930101;">Domanda ${indiceDomandaCorrente + 1} di ${numDomandeTotali}</h3>
+                <p style="font-weight:bold; margin-bottom: 20px;">${q.Domanda}</p>
+            </div>
             <div id="options">
                 ${['A', 'B', 'C', 'D'].map(opt => `
                     <label class="option-container" id="label-${opt}" style="display:block; padding:12px; border:2px solid #58c7ff; margin:8px 0; border-radius:10px; cursor:pointer; background: white; transition: 0.2s;">
@@ -56,7 +71,7 @@ function mostraDomanda() {
             <button class="btScopri" id="btn-invio" style="margin-top:20px; width: 100%;">Invia Risposta</button>
             
             <div id="box-spiegazione" style="display:none; margin-top:20px; padding:15px; background:#f0f8ff; border: 1px solid #58c7ff; border-radius:10px;">
-                <p id="testo-spiegazione" style="font-style: italic; color: #333;"></p>
+                <p id="testo-spiegazione" style="font-style: italic;"></p>
                 <a id="link-fonte" target="_blank" style="color:#930101; font-weight:bold; text-decoration: underline;">Approfondisci sulla fonte ufficiale</a>
                 <br>
                 <button class="btScopri" id="btn-next" style="margin-top:15px; background: #930101; color: white;">Prossima Domanda</button>
@@ -67,10 +82,12 @@ function mostraDomanda() {
     document.getElementById('btn-invio').onclick = controllaRisposta;
 }
 
-function controllaRisposta() {
+function controllaRisposta()
+{
     const selezionata = document.querySelector('input[name="answer"]:checked');
 
-    if (!selezionata) {
+    if (!selezionata)
+    {
         alert("Seleziona una delle opzioni!");
         return;
     }
@@ -83,16 +100,19 @@ function controllaRisposta() {
     document.getElementById('btn-invio').style.display = 'none';
 
     // Feedback visivo
-    const labelCorretta = document.getElementById(`label-${corretta}`);
+    const labelCorretta = document.getElementById("label-" + corretta);
     labelCorretta.style.background = "#d4edda";
     labelCorretta.style.borderColor = "#28a745";
 
-    if (rispostaUtente !== corretta) {
-        const labelSbagliata = document.getElementById(`label-${rispostaUtente}`);
+    if (rispostaUtente !== corretta)
+    {
+        const labelSbagliata = document.getElementById("label-" + rispostaUtente);
         labelSbagliata.style.background = "#f8d7da";
         labelSbagliata.style.borderColor = "#dc3545";
         domandeSbagliate.push(q);
-    } else {
+    }
+    else
+    {
         punteggio++;
     }
 
@@ -106,34 +126,43 @@ function controllaRisposta() {
 
     document.getElementById('btn-next').onclick = () => {
         indiceDomandaCorrente++;
-        if (indiceDomandaCorrente < datiQuiz.length) {
+        if (indiceDomandaCorrente < datiQuiz.length)
+        {
             mostraDomanda();
-        } else {
+        }
+        else
+        {
             mostraRisultati();
         }
     };
 }
 
-async function fetchSpiegazioneDallaFonte(url) {
-    try {
+async function fetchSpiegazioneDallaFonte(url)
+{
+    try
+    {
         const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
         const res = await fetch(proxyUrl);
         const data = await res.json();
         const parser = new DOMParser();
         const doc = parser.parseFromString(data.contents, 'text/html');
         const meta = doc.querySelector('meta[name="description"]');
-        if (meta && meta.getAttribute('content')) {
+        if (meta && meta.getAttribute('content'))
+        {
             document.getElementById('testo-spiegazione').innerText = meta.getAttribute('content');
         }
-    } catch (e) {
+    }
+    catch (e)
+    {
         // Resta il testo di q.Spiegazione se la fetch fallisce
     }
 }
 
-function mostraRisultati() {
+function mostraRisultati()
+{
     const perc = Math.round((punteggio / numDomandeTotali) * 100);
     containerQuiz.innerHTML = `
-        <div class="box1" style="padding: 40px; text-align: center;">
+        <div class="box1">
             <h2 style="font-size: 2.5rem;">Risultato Finale</h2>
             <p style="font-size: 1.5rem;">Hai totalizzato <strong>${punteggio}</strong> su ${numDomandeTotali}</p>
             <h1 style="font-size: 5rem; margin: 20px 0;">${perc}%</h1>
